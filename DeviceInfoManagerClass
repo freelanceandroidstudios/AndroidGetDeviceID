@@ -1,0 +1,17 @@
+/*
+* retreives the user device ID number
+* Requires user permission READ_PHONE_STATE in manifest
+*/
+public class DeviceInfoManager{
+
+  public String getDeviceID(Context context){
+    TelephonyManager tManager = (TelephonyManager)myActivity.getSystemService(Context.TELEPHONY_SERVICE);
+    String uid = tManager.getDeviceId();
+    
+    return uid; //return id 
+  
+  }
+}
+
+
+ 
